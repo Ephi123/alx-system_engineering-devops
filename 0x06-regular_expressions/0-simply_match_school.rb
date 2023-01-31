@@ -1,3 +1,3 @@
-#!/usr/bin/env ruby
-# Simply matching School
-
+#!/usr/bin/env ruby                                                                                               
+#simple matching Scholl
+School
