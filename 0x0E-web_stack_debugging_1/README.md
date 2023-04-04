@@ -1,22 +1,78 @@
-# 0x0E. Web stack debugging #1 
 
-<p align="center">
-  <img src="https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/271/B4eeypV.jpg" />
-</p>
+0x0E. Web stack debugging #1
+DevOps
+SysAdmin
+Scripting
+Debugging
+ By: Sylvain Kalache
+ Weight: 1
+ Project will start Apr 3, 2023 6:00 AM, must end by Apr 7, 2023 6:00 AM
+ Checker will be released at Apr 5, 2023 8:24 PM
+ An auto review will be launched at the deadline
+Concepts
+For this project, we expect you to look at these concepts:
 
-## Resource
+Network basics
+Web stack debugging
 
-- [Resources from Web stack debugging #0](https://github.com/iAmG-r00t/alx-system_engineering-devops/tree/main/0x0D-web_stack_debugging_0#resource)
 
+Requirements
+General
+Allowed editors: vi, vim, emacs
+All your files will be interpreted on Ubuntu 20.04 LTS
+All your files should end with a new line
+A README.md file at the root of the folder of the project is mandatory
+All your Bash script files must be executable
+Your Bash scripts must pass Shellcheck without any error
+Your Bash scripts must run without error
+The first line of all your Bash scripts should be exactly #!/usr/bin/env bash
+The second line of all your Bash scripts should be a comment explaining what is the script doing
+You are not allowed to use wget
+Tasks
+0. Nginx likes port 80
+mandatory
+Using your debugging skills, find out what’s keeping your Ubuntu container’s Nginx installation from listening on port 80. Feel free to install whatever tool you need, start and destroy as many containers as you need to debug the issue. Then, write a Bash script with the minimum number of commands to automate your fix.
 
-## Tasks
+Requirements:
 
-<details>
-<summary><a href="./0-nginx_likes_port_80">0. Nginx likes port 80</a></summary><br>
-<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/43fwt3rJ/image.png' border='0' alt='image'/></a>
-</details>
+Nginx must be running, and listening on port 80 of all the server’s active IPv4 IPs
+Write a Bash script that configures a server to the above requirements
+root@966c5664b21f:/# curl 0:80
+curl: (7) Failed to connect to 0 port 80: Connection refused
+root@966c5664b21f:/#
+root@966c5664b21f:/# ./0-nginx_likes_port_80 > /dev/null 2&>1
+root@966c5664b21f:/#
+root@966c5664b21f:/# curl 0:80
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx!</h1>
+<p>If you see this page, the nginx web server is successfully installed and
+working. Further configuration is required.</p>
 
-<details>
-<summary><a href="./1-debugging_made_short">1. Make it sweet and short</a></summary><br>
-<a href='https://postimg.cc/dDNKGf46' target='_blank'><img src='https://i.postimg.cc/FsNsX5SM/image.png' border='0' alt='image'/></a>
-</details>
+<p>For online documentation and support please refer to
+<a href="http://nginx.org/">nginx.org</a>.<br/>
+Commercial support is available at
+<a href="http://nginx.com/">nginx.com</a>.</p>
+
+<p><em>Thank you for using nginx.</em></p>
+</body>
+</html>
+root@966c5664b21f:/#
+Repo:
+
+GitHub repository: alx-system_engineering-devops
+Directory: 0x0E-web_stack_debugging_1
+File: 0-nginx_likes_port_80
+  
+Copyright © 2023 ALX, All rights reserved.
