@@ -1,7 +1,1 @@
-#What happens when you type a URL in the browser and press enter?
-For example if you type a path in the browser like www.Google.com
-. A browser is a local program like Chrome or Firefox that is running on your local computer. When you click on the browser icon, the operating system loads the program like Chrome or Firefox. It opens a window which is locally hosted on your desktop after you enter the website name in the URL and when you hit enter after entering the URL for example Www.cloud.com
- in the browser It has to translate the URL to the IP address. Servers communicate with IP address and not a domain name. That is why the domain name needs to be translated. A DNS or Domain Name System server is used to translate the IP to host name. For example www.google.com
- is translated to 8.8.8.8
- by the DNS server.
-The browser searches for the IP address translation in the DNS cache of the browser. If it does not find it in the browser cache then it looks up the operating system and checks the host file of the local computer and then the operating system cache. If it does not find it in the operating system cache then it looks up at the ISP or Internet service provider when it is able to translate the DNS name to DNS IP.
+https://www.linkedin.com/posts/ephrem-fereja-20373a231_mission-critical-enterprise-software-by-cloud-activity-7053668099476086784-1kZc?utm_source=share&utm_medium=member_desktop 
